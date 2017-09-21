@@ -4,14 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.salajim.musab.productfinder.MainActivity">
+    tools:context="com.salajim.musab.productfinder.ui.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/products"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/searchEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Product Finder! Find any product you need!"
-        android:textSize="30sp"
-        android:layout_marginTop="130dp" />
+        android:text="Welcome to Product Finder!"
+        android:textSize="28sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find any products you need!"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"/>
 
     <EditText
         android:layout_width="match_parent"
