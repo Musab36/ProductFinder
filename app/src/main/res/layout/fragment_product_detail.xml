@@ -12,7 +12,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="280dp"
             android:id="@+id/productImageView"
             android:src="@drawable/products"
             android:scaleType="centerCrop" />
@@ -55,21 +55,34 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="205dp"
-            android:background="@color/colorPrimary">
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_weight="0.57">
 
             <TextView
                 android:id="@+id/addToCartTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="35dp"
                 android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
                 android:drawablePadding="4dp"
                 android:text="Add to Cart"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="View Product"
+                android:id="@+id/productUrl"
+                android:drawableLeft="@drawable/ic_exit_to_app_white_24dp"
+                android:drawablePadding="4dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
 
         </RelativeLayout>
 
@@ -81,7 +94,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save Item"
+        android:text="Save Product"
         android:textAllCaps="false"
         android:background="@color/colorAccent"
         android:textColor="@android:color/white"
