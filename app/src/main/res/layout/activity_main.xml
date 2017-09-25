@@ -9,39 +9,10 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/products"
+        android:src="@drawable/laptop"
         android:scaleType="centerCrop"
         android:layout_alignParentTop="true"
-        android:layout_above="@+id/searchEditText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Product Finder!"
-        android:textSize="28sp"
-        android:textColor="@android:color/white"
-        android:layout_marginTop="40dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Find any products you need!"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="90dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/searchEditText"
-        android:layout_alignParentBottom="true"
-        android:layout_above="@+id/findProductsbtn"
-        android:layout_marginBottom="45dp"
-        android:hint="Search Products"
-        android:gravity="center"/>
+        android:layout_above="@+id/findProductsbtn" />
 
     <Button
         android:layout_width="match_parent"
@@ -53,6 +24,26 @@
         android:background="@color/colorPrimary"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_above="@+id/savedProductBtn"
+        android:visibility="visible"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Saved Products"
+        android:textAllCaps="false"
+        android:id="@+id/savedProductBtn"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

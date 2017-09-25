@@ -8,9 +8,14 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.salajim.musab.productfinder.Constants;
 import com.salajim.musab.productfinder.R;
 import com.salajim.musab.productfinder.models.Product;
 import com.squareup.picasso.Picasso;
@@ -31,6 +36,7 @@ public class ProductDetailFragment extends Fragment implements View.OnClickListe
     @Bind(R.id.productCategoryTextView) TextView mProductCategoryTextView;
     @Bind(R.id.addToCartTextView) TextView mAddToCartTextView;
     @Bind(R.id.productUrl) TextView mProductUrl;
+    @Bind(R.id.saveItemBtn) Button mSaveItem;
 
     private Product mProduct;
 
@@ -68,6 +74,7 @@ public class ProductDetailFragment extends Fragment implements View.OnClickListe
 
         mAddToCartTextView.setOnClickListener(this);
         mProductUrl.setOnClickListener(this);
+        mSaveItem.setOnClickListener(this);
 
         return view;
     }
@@ -80,6 +87,13 @@ public class ProductDetailFragment extends Fragment implements View.OnClickListe
         if(v == mProductUrl) {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(mProduct.getProductUrl()));
             startActivity(webIntent);
+        }
+        if(v == mSaveItem) {
+            DatabaseReference productRef = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Constants.FIREBASE_CHILD_PRODUCTS);
+            productRef.push().setValue(mProduct);
+            Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
         }
     }
 
