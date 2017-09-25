@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:text="Iphone 7 32GB"
             android:id="@+id/productName"
+            android:textColor="@color/colorPrimaryDark"
             android:paddingLeft="20dp"/>
 
         <RelativeLayout
@@ -35,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/productPriceTextView"
                 android:text="Price: $500"
+                android:textColor="@color/colorAccent"
                 android:paddingLeft="20dp"/>
 
             <TextView
@@ -42,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/customerRatingTextView"
                 android:text="Rating: 4.5/5"
+                android:textColor="@color/colorAccent"
                 android:layout_alignParentRight="true"/>
 
         </RelativeLayout>
@@ -51,26 +54,14 @@
             android:layout_height="wrap_content"
             android:id="@+id/productCategoryTextView"
             android:text="Category: Phones"
+            android:textColor="@color/colorPrimaryDark"
             android:paddingLeft="20dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
-            android:layout_weight="0.57">
-
-            <TextView
-                android:id="@+id/addToCartTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="35dp"
-                android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
-                android:drawablePadding="4dp"
-                android:text="Add to Cart"
-                android:textColor="@android:color/white"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+            android:layout_weight="0.65">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -83,6 +74,20 @@
                 android:textColor="@android:color/white"
                 android:textSize="15sp"
                 android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/addToCartTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ic_shopping_cart_white_24dp"
+                android:drawablePadding="4dp"
+                android:text="Add to Cart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 

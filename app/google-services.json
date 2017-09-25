@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "655710972659",
+    "firebase_url": "https://product-finder-c7a48.firebaseio.com",
+    "project_id": "product-finder-c7a48",
+    "storage_bucket": "product-finder-c7a48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:655710972659:android:1c813779dd7169a6",
+        "android_client_info": {
+          "package_name": "com.salajim.musab.productfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "655710972659-bi5020c8prdf6nqalc3rp02o0vkk6vcd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salajim.musab.productfinder",
+            "certificate_hash": "29a85812aa91016222616cb59927cca314ebcc28"
+          }
+        },
+        {
+          "client_id": "655710972659-l749s4mus75t4tpmkhmmpu7b5hp3i2qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbDGrF7fU3HyO0eA_xuyrTfqBa-GV-yRc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "655710972659-l749s4mus75t4tpmkhmmpu7b5hp3i2qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
